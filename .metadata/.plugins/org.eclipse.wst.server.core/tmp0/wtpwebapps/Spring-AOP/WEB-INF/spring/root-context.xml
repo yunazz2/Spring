@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"	
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+		
+	<!-- 이것만 바로 쓰면 에러가 날 것임. 지금 이 페이지의 Namespaces에서 aop 체크해주고 저장하면 위에 xmlns:aop 생기면서 에러 사라짐 -->
+	<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+	
+</beans>
